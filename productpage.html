@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/96608d31d0.js" crossorigin="anonymous"></script>
+    <script src="/main.js" defer></script>
+    <script src="/script.js" defer></script>
+</head>
+<body>
+    <div class="page1p">
+        <div class="header">
+            <div class="deli">
+                
+            </div>
+            <div class="pay1">
+                <div class="pay1l">
+                    <img src="/Images/favicon.87f00114.ico" alt="">
+                    <p>Sell on Jumia</p>
+                </div>
+                <img class="jp1" src="/Images/Jumia Pay.png" alt="">
+            </div>
+            <ul class="navbar">
+                <li>
+                    <img src="/Images/menu.png" alt="" style="margin:0; padding-bottom: 5px; width: 120%;">
+                </li>
+                <li>
+                    <img src="/Images/Jumia Logo.png" alt="" class="logo">
+                </li>
+                <li class="searchbar">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #828285;"></i>
+                    <input type="text" class="search" placeholder="Search products, brands and categories">
+                </li>
+                <li>
+                    <button class="searchb" onclick="nextpage()">SEARCH</button>
+                </li>
+                <div class="endb">
+                    <img src="/Images/user.png" alt="" class="useri">
+                    <p>Account</p>
+                    <img src="/Images/chevron.png" alt="" class="chev">
+                </div>
+                <div class="endb">
+                    <img src="/Images/question.png" alt="" class="useri">
+                    <p>Help</p>
+                    <img src="/Images/chevron.png" alt="" class="chev">
+                </div>
+                <div class="endb">
+                    <img src="/Images/shopping-cart.png" alt="" class="useri">
+                    <p>Cart</p>
+                    <img src="/Images/chevron.png" alt="" class="chev">
+                </div>
+                
+            </ul>
+        </div>
+        <div class="navigate">
+
+        </div>
+        <div id="product">
+            <div class="prodl">
+                <div class="prodll">
+                    <img src="" alt="" id="proD">
+                    <span class="topp1">SHARE THIS PRODUCT</span>
+                    <div class="iconp">
+                        <img src="/Images/facebook.png" alt="">
+                        <img src="/Images/twitter.png" alt="">
+                    </div>
+                </div>
+                <div class="prodlr">
+                    <h2 id="prodname"></h2>
+                    <div class="ammounts">
+                        <p id="disc"></p>
+                        <p id="origi"></p>
+                        <p id="perc">-43%</p>
+                    </div>
+                    <span style="color: #D8A815;">Few units left</span>
+                    <p style="color: #3a3a3b;">
+                        + shipping from 
+                        <span id="shipping"></span>
+                         to 
+                        <span id="location"></span>
+                    </p>
+                    <img src="/Images/stars.png" alt="" style="height: 25px; width: 250px;">
+                    <div class="cart">
+                        <i class="fa fa-cart-shopping" style="color: #ffffff;"></i>
+                        <p>ADD TO CART</p>
+                    </div>
+                    <span class="topp2">PROMOTIONS</span>
+                    <img src="/Images/uzembe.png" alt="">
+                </div>
+            </div>
+            <div class="delir">
+                <div class="delirtop">
+                    <div class="topp3">DELIVERY & RETURNS </div>
+                    <div class="selecta">
+                        <div class="topp3" style="border: none;">Choose Your Location </div>
+                        <select id="select">
+                            <option>Nairobi</option>
+                            <option>Mombasa</option>
+                            <option>Nakuru</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="delirbot">
+                    <div class="topp3">CART SUMMARY</div>
+                    <div class="delirbot2">
+                        <div class="subtotal">
+                            <span>Items total (1)</span>
+                            <p id="subtot"></p>
+                        </div>
+                        <div class="delif">
+                            <p id="delif1">Delivery Fees</p>
+                            <p id="delif2"></p>
+                        </div>
+                        <div class="tot">
+                            <div class="topp4">Total</div>
+                            <p id="tot1"></p>
+                        </div>
+                    </div>
+                    <div class="conf">
+                        <span>CONFIRM ORDER</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
