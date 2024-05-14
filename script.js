@@ -17,6 +17,40 @@ function displayProductDetails() {
 
 window.onload = displayProductDetails;
 
+
+///Quantity Calculator///
+
+let ngapi = 1;
+function items(){
+    document.getElementById('cart').style.display = 'none';
+    document.getElementById('quant').style.display = 'flex';
+    let itemQuant = document.getElementById('disp1');
+    itemQuant.innerText = ngapi;
+    const ongeza = document.getElementById('add');
+    const punguza = document.getElementById('minu');
+
+    ongeza.addEventListener('click', function() {
+        ngapi++;
+        itemQuant.innerText = ngapi;
+        
+
+    });
+
+    punguza.addEventListener('click', function() {
+        ngapi--;
+        itemQuant.innerText = ngapi;
+        if(ngapi == 0){
+            document.getElementById('cart').style.display = 'flex';
+            document.getElementById('quant').style.display = 'none';
+        };
+
+    });
+
+
+
+};
+
+
 //Delivery Fees Calc//
 
 const selectElem = document.getElementById("select");
@@ -25,33 +59,42 @@ selectElem.addEventListener("click", () => {
     let nairobi = 200;
     let mombasa = 800;
     let nakuru = 500;
-
+    
     const index = selectElem.selectedIndex;
+    let quanttot = selectedProduct.price * ngapi;
     
     if(index == '0'){
-        let tot = selectedProduct.price + nairobi;
+        let tot = quanttot + nairobi;
         
         document.getElementById('shipping').innerText = nairobi;
         document.getElementById('location').innerText = 'Nairobi';
-        document.getElementById('subtot').innerText = selectedProduct.price;
+        document.getElementById('subtot').innerText = quanttot;
+        document.getElementById('itmtot').innerText = ngapi;
         document.getElementById('delif2').innerText = nairobi;
         document.getElementById('tot1').innerText = tot;
         
     } else if(index == '1'){
-        let tot = selectedProduct.price + mombasa;
+        let tot = quanttot + mombasa;
         document.getElementById('shipping').innerText = mombasa;
         document.getElementById('location').innerText = 'Mombasa';
-        document.getElementById('subtot').innerText = selectedProduct.price;
+        document.getElementById('subtot').innerText = quanttot;
+        document.getElementById('itmtot').innerText = ngapi;
         document.getElementById('delif2').innerText = mombasa;
         document.getElementById('tot1').innerText = tot;
-    
+        
     } else if(index == '2'){
-        let tot = selectedProduct.price + nakuru;
+        let tot = quanttot + nakuru;
         document.getElementById('shipping').innerText = nakuru;
         document.getElementById('location').innerText = 'Nakuru';
-        document.getElementById('subtot').innerText = selectedProduct.price;
+        document.getElementById('subtot').innerText = quanttot;
+        document.getElementById('itmtot').innerText = ngapi;
         document.getElementById('delif2').innerText = nakuru;
         document.getElementById('tot1').innerText = tot;
     } 
-
+    
 });
+
+
+
+
+

@@ -34,7 +34,7 @@
                     <input type="text" class="search" placeholder="Search products, brands and categories">
                 </li>
                 <li>
-                    <button class="searchb" onclick="nextpage()">SEARCH</button>
+                    <button class="searchb">SEARCH</button>
                 </li>
                 <div class="endb">
                     <img src="/Images/user.png" alt="" class="useri">
@@ -82,9 +82,20 @@
                         <span id="location"></span>
                     </p>
                     <img src="/Images/stars.png" alt="" style="height: 25px; width: 250px;">
-                    <div class="cart">
+                    <div id="cart" onclick="items()">
                         <i class="fa fa-cart-shopping" style="color: #ffffff;"></i>
                         <p>ADD TO CART</p>
+                    </div>
+                    <div id="quant">
+                        <div id="minu">
+                            -
+                        </div>
+                        <div id="disp">
+                            <p id="disp1"></p>
+                        </div>
+                        <button id="add">
+                            +
+                        </button>
                     </div>
                     <span class="topp2">PROMOTIONS</span>
                     <img src="/Images/uzembe.png" alt="">
@@ -106,7 +117,7 @@
                     <div class="topp3">CART SUMMARY</div>
                     <div class="delirbot2">
                         <div class="subtotal">
-                            <span>Items total (1)</span>
+                            <span >Items total <p id="itmtot"></p></span>
                             <p id="subtot"></p>
                         </div>
                         <div class="delif">
