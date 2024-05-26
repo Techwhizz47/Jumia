@@ -32,23 +32,25 @@ function items(){
     ongeza.addEventListener('click', function() {
         ngapi++;
         itemQuant.innerText = ngapi;
-        
+        console.log(ngapi);
 
     });
 
     punguza.addEventListener('click', function() {
         ngapi--;
         itemQuant.innerText = ngapi;
+        console.log(ngapi);
         if(ngapi == 0){
             document.getElementById('cart').style.display = 'flex';
             document.getElementById('quant').style.display = 'none';
         };
-
+        
     });
 
-
+    console.log(ngapi);
 
 };
+
 
 
 //Delivery Fees Calc//
@@ -92,9 +94,6 @@ selectElem.addEventListener("click", () => {
         document.getElementById('tot1').innerText = tot;
     } 
     
+
+
 });
-
-
-
-
-

@@ -26,7 +26,8 @@
     height: 33.5%;
     width: 100%;
     padding: 0 280px;
-    background-image: url(/Images/KE_FreeDelivery_1122_STB.gif);
+    /* background-image: url(/Images/KE_FreeDelivery_1122_STB.gif); */
+    background-image: url(https://ke.jumia.is/cms/2024/Anniversary/Teasing/V2/Sliders/KE_Generic_JA24_Teasing_0524_STB.gif);
     background-size: 62%;
     background-position: 400px;
     background-repeat: no-repeat;
@@ -489,15 +490,73 @@
     border-bottom: 1px solid rgba(161, 160, 160, 0.205);
 }
 
-select{
+#select{
     height: 50px;
-    width: 265px;
-    margin: 10px 15px;
+    width: 270px;
+    margin: 10px 10px;
     padding: 10px;
     border-radius: 5px;
     color: #3a3a3b;
     border: 1px solid #757577;
     font-size: large;
+}
+
+.dlvr{
+    height: 135px;
+    width: 265px;
+    /* background-image: url(/Images/ret.png);
+    background-repeat: no-repeat; */
+    margin-left: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dlvrt{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.dlvrtl{
+    height: 100%;
+    width: 50px;
+    margin-left: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dlvrti{
+    height: 45px;
+    width: 50px;
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.664);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dlvrti img{
+    height: 30px;
+    width: 30px;
+}
+
+.dlvrtr{
+    height: 100%;
+    width: 195px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dlvrtr p{
+    font-size: small;
+    font-weight: 400;
+    color: #3a3a3b;
+    padding: 0 10px;
 }
 
 .delirbot{
