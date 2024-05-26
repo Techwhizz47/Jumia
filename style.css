@@ -68,8 +68,8 @@
     margin-left: 400px;
 }
 
-.navbar{
-    height: 44%;
+#navbar{
+    height: 84px;
     width: 100%;
     padding-left: 205px;
     background-color: rgb(255,255,255);
@@ -78,6 +78,18 @@
     list-style: none;
     align-items: center;
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+}
+
+.sticky + .navigate{
+    padding-top: 60px;
+}
+
 
 .fa-bars{
     color: #121212;
@@ -92,7 +104,7 @@
 }
 
 .searchbar {
-    height: 50%;
+    height: 43px;
     width: 585px;
     border: 1px solid rgb(163, 163, 166);
     border-radius: 5px;
@@ -155,7 +167,7 @@
     margin-bottom: 4px;
 }
 
-.navbar p{
+#navbar p{
     font-size: 18px;
     font-weight: 600;
     margin: 0 5px 2px 10px;
